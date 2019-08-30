@@ -15,9 +15,9 @@ class AddBug(Base):
     loc_name = ("xpath", ".//*[@id='bugList']/tbody/tr[1]/td[4]/a")
 
     def add_bug(self, title="test BUG"):
+		time.sleep(2)
         self.click(self.loc_text)
         self.click(self.loc_bug)
-        # time.sleep(2)
         self.click(self.loc_add_bug)
         self.click(self.loc_click_trunck)
         self.click(self.loc_add_trunck)
